@@ -1,0 +1,964 @@
+/*
+Theme Name: univespPI3
+Theme URI: http://wordpress.org/themes/univespPI3
+Author: Hygor Hailer
+Author URI: http://wordpress.org/
+Description: Tema criado para o Projeto Integrador 3, do segundo semestre de 2022, para o curso de Engenharia de Computação, da UNIVESP.
+Version: 1.0
+*/
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+canvas{
+    filter: blur(1px);
+  }
+
+html {
+    max-width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media(min-width:767px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: #ebe70e;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #000;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active {
+    outline: 0;
+    background-color: rgba(255,255,255,.2);
+}
+
+.navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    outline: 0;
+}
+
+.routes-images .index-title {
+    color: #FFF;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 0 0 10px 0;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background-color: #000;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/intro-bg.jpg) no-repeat center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro-gastro {
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/intro-bg-gastro.jpg) no-repeat center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro-cultural {
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/intro-bg-cultural.jpg) no-repeat center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro-rural {
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/intro-bg-rural.jpg) no-repeat center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.brand-heading {
+    font-size: 40px;
+}
+
+.intro-text {
+    font-size: 18px;
+}
+
+@media(min-width:767px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro-text {
+        font-size: 24px;
+    }
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.page-scroll .btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.page-scroll .btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0 {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0 {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.about-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.about-section-gastro {
+    background: url(../img/bg-gastro.jpg) no-repeat center center scroll;
+}
+
+.about-section-cultural {
+    background: url(../img/bg-cultural.jpg) no-repeat center center scroll;
+}
+
+.about-section-rural {
+    background: url(../img/bg-rural.jpg) no-repeat center center scroll;
+}
+
+@media(min-width:767px) {
+    .content-section {
+        padding-top: 250px;
+    }
+
+    .about-section {
+        padding: 100px 0;
+    }
+
+}
+
+.btn {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #ebe70e;
+    color: #ebe70ez;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #ebe70e;
+    outline: 0;
+    color: #000;
+    background-color: #ebe70e;
+}
+
+.btn-huge {
+    padding: 25px;
+    font-size: 26px;
+}
+
+.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1070px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:1070px) {
+    ul.banner-social-buttons>li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons>li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    -webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.fa-title {
+    font-size: 60px;
+    font-weight: revert;
+    font-style: normal;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+
+canvas{
+    filter: blur(1px);
+    position: absolute;
+    left:0px; 
+    top:0px;
+  }
+
+.brand {
+    display: grid;
+    background-color: #fff;
+    max-width: 100%;
+}
+
+.brand a {
+    font-size: 15px;
+    margin: 5px;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#route {
+    padding: 150px 0 100px 0;
+    width: 100%;
+    margin-left: 0;
+    
+}
+
+.images {
+    display: inline-block;
+    padding: 20px;
+}
+
+.images img {
+    border: solid ;
+    border-style: solid;
+    border-radius: 2px;
+    border-color: #fff;
+    width: auto;
+}
+
+.row-image {
+    width: 100%;
+    margin: 0 40px;
+}
+
+.row, .col-lg-offset-2{
+    width: 100%;
+    margin: 0%;
+}
+
+.route-section {
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.routes-images p {
+    margin: 0 auto;
+    padding: 15px 0 40px 0px;
+    color: #FFF;
+    width: 300px;
+    font-size: 18px;
+}   
+
+.routes-images a {
+    margin: 20px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #ccad49;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #FFF; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#ccad49;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#7a6520; }
+
+[type="button"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    transition: all 0.3s;
+    margin: 5px 10px 0 10px;
+    font-weight:700;
+    padding: 0;
+  }
+
+#btn-send-loader {
+    display: none;
+}
+
+#alert-msg {
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+}
+
+#contact {
+    padding: 100px;
+}
+
+.contact-box {
+    margin-top: 50px;
+}
+
+.routes-images {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.routes-images img {
+    width: 300px;
+    margin: 0 30px;
+    border: 2px solid #FFF;
+}
+
+.zoom {
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+.zoom:hover {
+transform: scale(1.1); 
+}
+
+.zoom-places {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+  }
+
+.zoom-places:hover {
+transform: scale(1.1); 
+}
+
+#comments {
+margin-bottom: 50px;
+padding: 0;
+margin-top: 30px;
+}
+
+#comment-box {
+    background-color: #FFF;
+    max-width: 60%;
+    padding: 10px 20px;
+    margin: 0 auto;   
+    border-style:ridge;
+    border-radius: 5px;
+    border-color:#7a6520
+}
+
+#comment-box .badge{
+text-align: right;
+}
+
+.comment-title {
+font-family: Arial, Helvetica, sans-serif;
+text-transform: none;
+font-size: 22px;
+color: #7a6520;
+text-align: left;
+margin: 10px 0;
+letter-spacing: 0;
+}
+
+.content-title h2 {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.comment-top {
+    display: inline-flex;
+    width: 100%;
+}
+
+.coment-a {
+    width: 100%;
+}
+
+.badge {
+    background:none;
+    color: #7a6520;
+    height: 24.2px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 20%;
+}
+
+.comment-content {
+    color: #523f03;
+    text-align: left;
+    font-size: 16px;
+    text-transform: none;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    max-height: 100%;
+}
+
+#comment-box {
+    padding: 5px 30px;
+    max-height: 500px;
+    overflow:auto;
+}
+
+hr {
+    margin: 0;
+}
+
+.form-group {
+    margin: 0;
+    display: flex;
+}
+
+textarea.form-control {
+    height: 150px;
+}
+
+.post-inner{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.left-comment{
+    margin: 0;
+    padding-top: 30px;
+}
+
+.fa-utensils, .fa-archway, .fa-leaf {
+    margin-bottom: 10px;
+}
+
+#about-gastro, #about-cultural, #about-rural {
+    padding: 0;
+}
+
+.about-outer {
+    padding-top: 0;
+}
+
+.route-gastro, .route-cultural, .route-rural {
+    margin-bottom: 0;
+    padding-top: 80px;
+}
+
+.container-gastro img, .container-cultural img, .container-rural img {
+    height: 600px;
+    width: auto;
+    margin: 0;
+    border-radius: 5px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.container-gastro:hover .image-gastro, .container-cultural:hover .image-cultural, .container-rural:hover .image-rural {
+opacity: 0.3;
+}
+
+.container-gastro:hover .middle, .container-cultural:hover .middle, .container-rural:hover .middle {
+opacity: 1;
+}
+
+.text-gastro, .text-cultural, .text-rural {
+background-color: #ccad49;
+color: white;
+font-size: 16px;
+padding: 16px 32px;
+}
+
+.places img {
+    background-color: #FFF;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    padding: 2px;
+    position: relative;
+    margin: 40px 40px 0 40px;
+    flex-wrap: wrap;
+}
+
+.places p{
+    width: 200px;
+    padding: 10px 0 0 0;
+    margin-bottom: 20px;
+    line-height: normal;
+    font-size: 18px;
+}
+
+/* Rota Gastronômica Imagens */
+.rubinho, .eventos {
+    margin: 80px 80px;
+}
+
+.sucata, .mariofava {
+    margin: 360px 80px;
+}
+
+.dvitto, .museu {
+    margin: 80px -220px;
+}
+
+.kanto, .dupla {
+    margin: 360px -220px;
+}
+
+.p-title {
+    margin: 0 auto;
+    max-width: 650px;
+    padding: 0 20px;
+}
+
+.gastro-inner {
+    width: 100%;
+}
+
+.right-content, .left-content {
+    display: grid;
+}
+
+/* --------------------------- */
+
+.all-places {
+    height: 500px;
+    width: 300px;
+}
+
+img {
+    font-size: 0;
+    color: #000;
+}
+
+
+/* Tablet */
+@media screen and (max-width:1200px) {
+    .view {
+        width: 1200px;
+    }
+
+    .right-content, .left-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-header {
+        margin-bottom: 25px;
+    }
+
+    .navbar-toggle {
+        margin: 0;
+    }
+
+    #route {
+        padding-bottom: 0;
+    }
+
+    .routes-images {
+        padding: 0;
+        transform: scale(0.9);
+        margin-top: 0;
+        width: min-content;
+        margin: 0 auto;
+    }
+
+
+}
+
+/* Mobile */
+@media screen and (max-width:750px) {
+    .view {
+        width: 200px;
+    }
+    
+    .about-section {
+        margin-top: 100px;
+    }
+
+    #contact {
+        padding: 0;
+    }
+
+    #comment-box {
+        max-width: 90%;
+    }
+
+    .routes-images .places {
+        transform: scale(0.8);
+        margin: 0;
+        height: min-content;
+    }
+
+    .right-content, .left-content {
+        display: flex;
+        align-items: baseline;
+        height: 200px;
+    }
+
+    .left-content a, .right-content a{
+        margin-inline: -20px;
+    }
+
+    .places img {
+        margin: 0;
+    }
+
+    #route {
+        padding: 100px 0 0 0;
+    }
+
+    .routes-images p {
+        padding-bottom: 10px;
+    }
+
+    .routes-images a {
+        margin-top: 0;
+    }
+
+    .container-gastro .image-gastro, .container-cultural .image-cultural, .container-rural .image-rural {
+        height: 300px;
+    }
+
+    .about-section {
+        margin-top: 50px;
+    }
+
+    .about-inner {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .container .navbar-header {
+        padding: 10px 0;
+        margin: 0 5px;
+    }
+
+    .navbar-brand {
+        padding-top: 8px;
+        padding-left: 2px;
+    }
+    
+    .middle {
+        display: ruby;
+    }
+
+    .left-comment {
+        margin-top: 80px;
+        padding: 0;
+    }
+
+    
+    .p-title {
+        margin-bottom: 30px;
+    }
+
+    #route h2 {
+        margin-bottom: 10px;
+    }
+
+}
+
+/* Tiny-Mobile */
+@media screen and (max-width:400px) { 
+    h1, h2 {
+    font-size: 26px;
+    }
+
+    .routes-images {
+        padding: 0;
+        transform: scale(0.9);
+        margin-top: 0;
+        width: auto;
+        margin: 0;
+    }
+
+}
