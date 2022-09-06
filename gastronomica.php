@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt_br">
 
+<?php
+    // Template Name: Gastronomica
+?>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">    
@@ -9,10 +13,10 @@
 
     <title>Pedala Bariri - Cicloturismo no Interior</title>
 
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
 </head>
@@ -25,7 +29,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/home">
                     <i class="fa fa-bicycle"></i>  <span class="light">Pedala</span> Bariri
                 </a>
             </div>
@@ -38,13 +42,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="index.html#route">Rotas</a>
+                        <a href="/home/#route">Rotas</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="index.html#about-fix">Sobre</a>
+                        <a href="/home/#about-fix">Sobre</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="index.html#contact">Contato</a>
+                        <a href="/home/#contact">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -80,15 +84,15 @@
                 <div class="routes-images container-gastro">
                     <div class="left-content">
                         <a class="places" href="https://www.instagram.com/armazemdvitto/" target="_blank">
-                            <img class="zoom-places dvitto" src="img/dvitto.jpg" alt="Armazeḿ DVitto">
+                            <img class="zoom-places dvitto" src="<?php echo get_stylesheet_directory_uri(); ?>/img/dvitto.jpg" alt="Armazeḿ DVitto">
                             <p>Armmazém D'Vitto</p>
                         </a>
                         <a class="places" href="https://www.instagram.com/kantodolago/" target="_blank">
-                            <img class="zoom-places kanto" src="img/kanto.jpg" alt="Kanto do Lago">
+                            <img class="zoom-places kanto" src="<?php echo get_stylesheet_directory_uri(); ?>/img/kanto.jpg" alt="Kanto do Lago">
                             <p>Kanto do Lago</p>
                         </a>
                     </div>
-                    <img class="image-gastro" src="img/gastro-map.jpg" alt="Rota Gastronômica">
+                    <img class="image-gastro" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gastro-map.jpg" alt="Rota Gastronômica">
                     <div class="middle" id="noGeo" onclick="">
                         <a id="gastro-id" href="" target="_blank">
                         <div class="text-gastro">Acesse a rota</div>
@@ -96,11 +100,11 @@
                     </div>
                     <div class="right-content">
                         <a class="places" href="https://www.instagram.com/pizzariarubinho_ofc/" target="_blank">
-                            <img class="zoom-places rubinho" src="img/rubinho.jpg" alt="Pizzaria do Rubinho">
+                            <img class="zoom-places rubinho" src="<?php echo get_stylesheet_directory_uri(); ?>/img/rubinho.jpg" alt="Pizzaria do Rubinho">
                             <p>Pizzaria do Rubinho</p>
                         </a>
                         <a class="places" href="https://www.instagram.com/sucata.restauranteebuffet/" target="_blank">
-                            <img class="zoom-places sucata" src="img/sucata.jpg" alt="Restaurante Sucata">
+                            <img class="zoom-places sucata" src="<?php echo get_stylesheet_directory_uri(); ?>/img/sucata.jpg" alt="Restaurante Sucata">
                             <p>Sucata Restaurante e Buffet</p>
                         </a>
                     </div>
@@ -153,11 +157,11 @@
         </a>
     </footer>
 
-    <script src="js/jquery.js" ></script>
-    <script src="js/bootstrap.js" ></script>
-    <script src="js/jquery.easing.js" ></script>
-    <script src="js/canvas.js" ></script>
-    <script src="js/style.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.easing.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/canvas.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/style.js" ></script>
     <script>
         var options = {
             enableHighAccuracy: true,

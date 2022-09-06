@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt_br">
 
+<?php
+    // Template Name: Rural
+?>
+
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">    
@@ -9,11 +14,12 @@
 
     <title>Pedala Bariri - Cicloturismo no Interior</title>
 
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
 
 </head>
 
@@ -25,7 +31,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/home">
                     <i class="fa fa-bicycle"></i>  <span class="light">Pedala</span> Bariri
                 </a>
             </div>
@@ -34,17 +40,17 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
 
-                    <li class="hidden">
+                <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="index.html#route">Rotas</a>
+                        <a href="/home/#route">Rotas</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="index.html#about-fix">Sobre</a>
+                        <a href="/home/#about-fix">Sobre</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="index.html#contact">Contato</a>
+                        <a href="/home/#contact">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -83,15 +89,15 @@
                 <div class="routes-images container-rural">
                     <div class="left-content">
                         <a class="places" href="https://www.facebook.com/pages/Lago%20Municipal%20Bariri/1184867901623278/" target="_blank">
-                            <img class="zoom-places lago" src="img/lago.jpg" alt="Lago Municipal">
+                            <img class="zoom-places lago" src="<?php echo get_stylesheet_directory_uri(); ?>/img/lago.jpg" alt="Lago Municipal">
                             <p>Lago Municipal</p>
                         </a>
                         <a class="places" href="https://pt.wikipedia.org/wiki/Barragem_de_Bariri" target="_blank">
-                            <img class="zoom-places tiete" src="img/tiete.jpg" alt="Rio Tietê">
+                            <img class="zoom-places tiete" src="<?php echo get_stylesheet_directory_uri(); ?>/img/tiete.jpg" alt="Rio Tietê">
                             <p>Rio Tietê</p>
                         </a>
                     </div>                       
-                    <img class="image-rural" src="img/rural-map.jpg" alt="Rota Rural">
+                    <img class="image-rural" src="<?php echo get_stylesheet_directory_uri(); ?>/img/rural-map.jpg" alt="Rota Rural">
                     <div class="middle" id="noGeo" onclick="">
                         <a id="rural-id" href="" target="_blank">
                         <div class="text-rural">Acesse a rota</div>
@@ -100,11 +106,11 @@
                 
                     <div class="right-content">
                         <a class="places" href="http://wikimapia.org/16055015/pt/Capela-de-S%C3%A3o-Jos%C3%A9" target="_blank">
-                            <img class="zoom-places capela" src="img/capela.jpg" alt="Capela de São José">
+                            <img class="zoom-places capela" src="<?php echo get_stylesheet_directory_uri(); ?>/img/capela.jpg" alt="Capela de São José">
                             <p>Capela de São José</p>
                         </a>
                         <a class="places" href="https://www.facebook.com/cabanamateiro/" target="_blank">
-                            <img class="zoom-places cabana" src="img/cabana.jpg" alt="Cabana Mateiro">
+                            <img class="zoom-places cabana" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cabana.jpg" alt="Cabana Mateiro">
                             <p>Cabana Mateiro</p>
                         </a>
                     </div>
@@ -157,11 +163,11 @@
         </a>
     </footer>
 
-    <script src="js/jquery.js" ></script>
-    <script src="js/bootstrap.js" ></script>
-    <script src="js/jquery.easing.js" ></script>
-    <script src="js/canvas.js" ></script>
-    <script src="js/style.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.easing.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/canvas.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/style.js" ></script>
     <script>
         var options = {
             enableHighAccuracy: true,

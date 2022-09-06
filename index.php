@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt_br">
 
+<?php
+    // Template Name: Home
+?>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
@@ -9,10 +13,10 @@
     
     <title>Pedala Bariri - Cicloturismo no Interior</title>
 
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
 </head>
@@ -79,21 +83,21 @@
                 <p class='p-title'>Escolha o destino que mais combina com você, ou se preferir, visite todos os pontos turísticos da cidade. </p>
 
                 <div class="routes-images">
-                    <a href="gastronomica.html">
+                    <a href="/gastronomica">
                         <p class="index-title">Gastronômica</p>
-                        <img class="zoom" src="img/gastro-index.jpg" alt="Rota Gastronômica">
+                        <img class="zoom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/gastro-index.jpg" alt="Rota Gastronômica">
                         <p>Escolha ideal para quem quer conhecer pratos típicos e iguarias locais, as opções culinárias dessa rota são de dar 
                             água na boca. Vale a pena experimentar! </p>
                     </a>
-                    <a href="cultural.html">
+                    <a href="/cultural">
                         <p class="index-title">Cultural</p>
-                        <img class="zoom" src="img/cultural-index.jpg" alt="Rota Cultural">
+                        <img class="zoom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cultural-index.jpg" alt="Rota Cultural">
                         <p>Destino recheado de história e cultura, essa opção convida o ciclista a conhecer toda tradição da cidade, 
                             apresentando centros culturais, religiosos, festivos e o conhecido museu</p>
                     </a>
-                    <a href="rural.html">
+                    <a href="/rural">
                         <p class="index-title">Rural</p>
-                        <img class="zoom" src="img/rural-index.jpg" alt="Rota Rural">
+                        <img class="zoom" src="<?php echo get_stylesheet_directory_uri(); ?>/img/rural-index.jpg" alt="Rota Rural">
                         <p>Cercada por diversos atrativos naturais como rios, lagos, construções rurais, mata, entre outros, essa rota oferece 
                             condições para a prática do turismo de aventura e ecoturismo.
 
@@ -148,11 +152,11 @@
         </a>
     </footer>
 
-    <script src="js/jquery.js" ></script>
-    <script src="js/bootstrap.js" ></script>
-    <script src="js/jquery.easing.js" ></script>
-    <script src="js/canvas.js" ></script>
-    <script src="js/style.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.easing.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/canvas.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/style.js" ></script>
 
 </body>
 

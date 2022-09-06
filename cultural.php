@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt_br">
 
+<?php
+    // Template Name: Cultural
+?>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">    
@@ -9,10 +13,10 @@
 
     <title>Pedala Bariri - Cicloturismo no Interior</title>
 
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
 </head>
@@ -25,7 +29,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/home">
                     <i class="fa fa-bicycle"></i>  <span class="light">Pedala</span> Bariri
                 </a>
             </div>
@@ -34,17 +38,17 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
 
-                    <li class="hidden">
+                <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="index.html#route">Rotas</a>
+                        <a href="/home/#route">Rotas</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="index.html#about-fix">Sobre</a>
+                        <a href="/home/#about-fix">Sobre</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="index.html#contact">Contato</a>
+                        <a href="/home/#contact">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -81,15 +85,15 @@
                 <div class="routes-images container-cultural">
                     <div class="left-content">
                         <a class="places" href="https://museumariofava.com.br/home" target="_blank">
-                            <img class="zoom-places museu" src="img/museu.jpg" alt="Museu Mario Fava">
+                            <img class="zoom-places museu" src="<?php echo get_stylesheet_directory_uri(); ?>/img/museu.jpg" alt="Museu Mario Fava">
                             <p>Museu Mário Fava</p>
                         </a>                    
                         <a class="places" href="https://www.facebook.com/LeoncioeLeonel" target="_blank">
-                            <img class="zoom-places dupla" src="img/dupla.jpg" alt="Leôncio e Leonel">
+                            <img class="zoom-places dupla" src="<?php echo get_stylesheet_directory_uri(); ?>/img/dupla.jpg" alt="Leôncio e Leonel">
                             <p>Monumento Leôncio e Leonel</p>
                         </a>
                     </div>
-                    <img class="image-cultural" src="img/cultural-map.jpg" alt="Rota Cultural">
+                    <img class="image-cultural" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cultural-map.jpg" alt="Rota Cultural">
                     <div class="middle" id="noGeo" onclick="">
                         <a id="cultural-id" href="" target="_blank">
                         <div class="text-cultural">Acesse a rota</div>
@@ -97,11 +101,11 @@
                     </div>
                     <div class="right-content">
                         <a class="places" href="https://www.bariri.sp.gov.br/portal/noticias/3/1/12/0/0/0" target="_blank">
-                            <img class="zoom-places eventos" src="img/evento.jpg" alt="Eventos">
+                            <img class="zoom-places eventos" src="<?php echo get_stylesheet_directory_uri(); ?>/img/evento.jpg" alt="Eventos">
                             <p>Eventos culturais</p>
                         </a>
                         <a class="places" href="https://www.bariri.sp.gov.br/portal/servicos/136/Cultura" target="_blank">
-                            <img class="zoom-places mariofava" src="img/mariofava.jpg" alt="CENTRO EDUCACIONAL, CULTURAL E DE EXPOSIÇÕES MÁRIO FAVA">
+                            <img class="zoom-places mariofava" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mariofava.jpg" alt="CENTRO EDUCACIONAL, CULTURAL E DE EXPOSIÇÕES MÁRIO FAVA">
                             <p>Centro Educacional, Cultural e de Exposições Mario Fava</p>
                         </a>
                     </div>
@@ -154,11 +158,11 @@
         </a>
     </footer>
 
-    <script src="js/jquery.js" ></script>
-    <script src="js/bootstrap.js" ></script>
-    <script src="js/jquery.easing.js" ></script>
-    <script src="js/canvas.js" ></script>
-    <script src="js/style.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.easing.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/canvas.js" ></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/style.js" ></script>
     <script>
         var options = {
             enableHighAccuracy: true,

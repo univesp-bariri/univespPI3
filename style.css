@@ -4,7 +4,7 @@ Theme URI: http://wordpress.org/themes/univespPI3
 Author: Hygor Hailer
 Author URI: http://wordpress.org/
 Description: Tema criado para o Projeto Integrador 3, do segundo semestre de 2022, para o curso de Engenharia de Computação, da UNIVESP.
-Version: 1.0
+Version: 1.2
 */
 
 body {
@@ -153,7 +153,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat center scroll;
+    background: url(img/intro-bg.jpg) no-repeat center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -170,7 +170,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg-gastro.jpg) no-repeat center scroll;
+    background: url(img/intro-bg-gastro.jpg) no-repeat center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -187,7 +187,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg-cultural.jpg) no-repeat center scroll;
+    background: url(img/intro-bg-cultural.jpg) no-repeat center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -204,7 +204,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg-rural.jpg) no-repeat center scroll;
+    background: url(img/intro-bg-rural.jpg) no-repeat center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -318,7 +318,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(img/downloads-bg.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -327,15 +327,15 @@ a:focus {
 }
 
 .about-section-gastro {
-    background: url(../img/bg-gastro.jpg) no-repeat center center scroll;
+    background: url(img/bg-gastro.jpg) no-repeat center center scroll;
 }
 
 .about-section-cultural {
-    background: url(../img/bg-cultural.jpg) no-repeat center center scroll;
+    background: url(img/bg-cultural.jpg) no-repeat center center scroll;
 }
 
 .about-section-rural {
-    background: url(../img/bg-rural.jpg) no-repeat center center scroll;
+    background: url(img/bg-rural.jpg) no-repeat center center scroll;
 }
 
 @media(min-width:767px) {
